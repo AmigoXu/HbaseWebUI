@@ -68,18 +68,14 @@ $(document).ready(
 				})
 			});
 
-			$("#btn-top")
-					.click(
-							function() {
-								var tbl = $("#t_table").val().trim(), dt = $(
-										"#dt").val().trim(), appkey = $(
-										"#appkey").val().trim(), chan = $(
-										"#chan").val().trim(), ver = $("#ver")
-										.val().trim();
-								$("#rowkey")[0].value = $.myFunc.getRowkey(tbl,
-										dt, appkey, chan, ver)
-										+ "";
-							});
+			$("#btn-top").click(function() {
+				var tbl = $("#t_table").val().trim(),
+				        dt = $("#dt").val().trim(), 
+				        appkey = $("#appkey").val().trim(), 
+				        chan = $("#chan").val().trim(),
+				        ver = $("#ver").val().trim();
+				$("#rowkey")[0].value = $.myFunc.getRowkey(tbl,	dt, appkey, chan, ver) + "";
+			});
 
 			$("#btn-add").click(function() {
 				var rowkey = $("#rowkey").val();
