@@ -1,0 +1,59 @@
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	text-align: left;
+	font-family: Consolas;
+}
+
+div#header {
+	margin: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 5px border:1px solid #003;
+	text-align: right;
+}
+
+div#gen_rk {
+	margin: 2px 0px 2px 2px;
+	padding: 5px 0px 5px 5px border:1px solid #003;
+	text-align: left;
+}
+
+div#left {
+	float: left;
+	width: 49%;
+	height: 500px;
+	border: 1px solid #003;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 1px 0px 0px 5px
+}
+
+div#right {
+	float: right;
+	width: 49%;
+	height: 500px;
+	border: 1px solid #003;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 1px 0px 0px 5px
+}
+
+textarea#ltext textarea#ltext {
+	min-width: 300px;
+	height: 500px;
+	border: 1px solid #003;
+	margin: 0 auto;
+	resize: none;
+}
+
+p {
+	text-align: left;
+}
+
+p.right {
+	text-align: right;
+}
+
+input[type=checkbox] {
+	text-align: right;
+}

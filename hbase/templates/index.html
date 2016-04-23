@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="{{ STATIC_URL }}css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+  <meta name="description" content="{{ site.description }}">
+  <script type="text/javascript" src="../static/jquery-1.12.3.min.js"></script>
+  <script type="text/javascript" src="../static/jquery.md5.js"></script>
+  <script type="text/javascript" src="../static/main.js"></script>
+  <link rel="stylesheet" href="../static/wcss.css" type="text/css" />
+
+    
+</head>
+
+<body>
+	
+  <header>
+  <div>
+	<div id="header">
+	<span>conn:</span>
+	<input id="conn" type="text" name="conn" size="30" />
+	</textarea>
+	</div>
+	<div id="gen_rk">
+	  <span>table:</span>
+      <input id="t_table" type="text" size="20" name="t_table"/>
+      <span>appkey:</span>
+      <input id="appkey" type="text" size="30" name="appkey"/>
+      <span>date:</span>
+      <input id="dt" type="text" size="15" name="dt"/>
+      <span>chan:</span>
+      <input id="chan" type="text" size="20" name="chan"/>
+      <span>ver:</span>
+      <input id="ver" type="text" size="20" name="ver"/>
+      <br>
+      
+      rowkey:<input type="text" id="rowkey" size="50" />
+      <input type="button" id="btn-add" value="add to rk" />
+      <input type="button" id="btn-top" value=" gen_rk " />
+	</div>
+  </div>
+  </header>
+
+  
+  <div id="left">
+  <br>
+  <form action="" method="post">
+    <span>table:</span>
+    <input id="l_table" type="text" size="20" name="l_table"/>
+    <br>cols:
+    <input id="l_cols" type="text" size="70" name="l_cols"/>
+	<br>
+	rk:
+	<input id="l_rklist" type="text" size="70" name="l_table"/>
+	<input type="button" id="btn-get" value="GET" >
+	<input type="button" id="btn-copy" value="COPY" >
+	<br>
+	<textarea id="ltext" wrap="virtual" onpropertychange= "this.style.posHeight=this.scrollHeight"  rows="25" cols="80">
+
+	</textarea>
+  </form>
+  <p class="right">
+  <input type="checkbox" id="wrap"  value="wrap" checked="checked" onclick="wrapSwitch()"><label for="wrap">wrap</label>
+  <input type="checkbox" id="plain" value="plain" onclick="plainSwitch()"><label for="plain">plain</label>
+  </p>
+  </div>
+
+  <div id="right">
+    <br>
+    <span>table:</span>
+    <input id="r_table" type="text" size="20" name="r_table"/>
+    <br>cols:
+    <input id="r_cols" type="text" size="70" name="r_cols"/>
+    <form action="" method="post">
+    <label>	<input type="radio" name="type" value="PUT" checked="checked">PUT</label>
+    <label> <input type="radio" name="type" value="DEL" >DEL</label>
+    <input id="r_rklist" type="text" size="67" name="r_rklist"/>
+    <input type="button"  id="btn-fire" value="FIRE" />
+    <br>
+	<textarea id="rtext" wrap="virtual" onpropertychange= "this.style.posHeight=this.scrollHeight" rows="25" cols="80">
+
+	</textarea>  
+	</form>
+  </div>
+  
+  <p id="log" class="right"></p>
+
+  <footer>
+
+  </footer>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+  <script type="text/javascript">
+
+  
+	
+</script> 
+</body>
+</html>
